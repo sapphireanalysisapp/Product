@@ -1,0 +1,36 @@
+{
+  "name": "expressapi",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "rm -rf dist && webpack --mode development",
+    "start": "node ./dist/bundle-back.js"
+  },
+  "optionalDependencies": {
+    "idb-connector": "^1.2.10",
+    "mysql": "^2.17.1",
+    "mysql2": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "^0.29.0",
+    "morgan": "~1.9.1",
+    "idb-pconnector": "^1.0.8",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-loader": "^8.2.2",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.4.0",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-node-externals": "^3.0.0"    
+  },
+  "bundledDependencies": [
+    "express"
+  ]
+}
